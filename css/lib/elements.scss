@@ -1,0 +1,16 @@
+@import "varibles";
+
+.show-more-button {
+  position: absolute;
+  bottom: 10px; right: 10px;
+  background: $red;
+  color: $almost-white;
+  padding: 9px 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(226, 87, 76, 0.75);
+    transition: $standart-transition;
+  }
+}

@@ -1,0 +1,39 @@
+/*COLORS*/
+$black: #141414;
+$black-lighter: lighten($black, 0.1%);
+$light-gray: #d6d6d6;
+$almost-white: #eee;
+$gray: darken($light-gray, 60%);
+$white: white;
+$red: #E2574C;
+$gold: #a56a1a;
+$black: #222;
+$black333: #333;
+$posts-black: #151515;
+$lignter-black: #333;
+
+/*BACKGROUNDS*/
+
+
+/*BORDERS*/
+$border-30: 30px solid $almost-white;
+$border-post: 10px solid $almost-white;
+$border-main: 5px solid $almost-white;
+
+/*FONTS*/
+$raleway-regular: "RalewayRegular", "Arial", "sans-serif";
+$raleway-thin: "RalewayThin", "Arial", "sans-serif";
+$raleway-extra-light: "RalewayExtraLight", "Arial", "sans-serif";
+$raleway-semi-bold: "RalewaySemiBold", "Arial", "sans-serif";
+
+
+/*ICONS*/
+/*SHADOWS*/
+$shadow: 0 0 5px rgba(0,0,0,0.1);
+
+/*SIZES*/
+$size-40px: 40px;
+$size-1200px: 1200px;
+
+/*TRANSITIONS*/
+$standart-transition: all .25s ease
