@@ -6,19 +6,18 @@
 	<link rel="stylesheet" type="text/css" href="css/core/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/core/style.css">
 	<link rel="stylesheet" type="text/css" href="css/lib/elements.css">
-	<script src="js/ready.js"></script>
-	<script src="js/slider.js"></script>
+	<script src="js/js-core/core.js"></script>
 	<title>Free-Cheese.com | Главная</title>
 </head>
 <body>
 	<header>
 		<div class="header-container">
-			<a class="header--logo" href="/"><img src="resources/Logo.svg" /></a>
+			<a class="header--logo" href="/"><img src="resources/Logo.svg"></a>
 			<ul class="header--menu">
 				<li><a href="#">розыгрыши</a></li>
 				<li><a href="#">новости</a></li>
 				<li><a href="#">статьи</a></li>
-				<li><a href="#">поиск</a></li>
+				<li><a href="#" id="search">поиск</a></li>
 			</ul>
 			<div class="header--profile">
 				<a href="#">johnlemon</a>
@@ -90,7 +89,7 @@
 		</div>
 	</section>
 	<footer></footer>
-	<div class="search-overlay">
+	<div class="search-overlay" id="search-overlay">
 		<div class="search-container">
 			<input type="text" name="query" class="query" placeholder="Поиск" autocomplete="off">
 			<button class="search-button" type="submit" id="searchsubmit" value=""><a class="loupe"></a></button>
