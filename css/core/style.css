@@ -487,4 +487,13 @@ section {
   position: relative;
   display: block; }
 
+.visible {
+  opacity: 1; }
+
+.invisible {
+  opacity: 0; }
+
+.disabled {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

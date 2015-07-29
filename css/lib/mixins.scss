@@ -71,3 +71,12 @@
   background-size: 100%;
   background-position:  center center;
 }
+@mixin invisible {
+  opacity: 0;
+}
+@mixin visible {
+  opacity: 1;
+}
+@mixin disabled {
+  display: none;
+}

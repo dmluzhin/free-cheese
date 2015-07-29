@@ -319,3 +319,12 @@ section {
   position: relative;
   display: block;
 }
+.visible {
+  @include visible;
+}
+.invisible {
+  @include invisible;
+}
+.disabled {
+  @include disabled;
+}
