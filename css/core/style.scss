@@ -83,6 +83,7 @@ header {
   -webkit-flex-basis: initial;
   -ms-flex-preferred-size: initial;
   flex-basis: initial;
+  position: relative;
   width: 105px;
   height: 20px;
   background: red;
@@ -327,4 +328,7 @@ section {
 }
 .disabled {
   @include disabled;
+}
+.animate {
+  transition: $standart-transition;
 }
