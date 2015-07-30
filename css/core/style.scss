@@ -86,7 +86,7 @@ header {
   position: relative;
   width: 105px;
   height: 20px;
-  background: red;
+  background: $red;
   border: $border-main;
   border-left: none;
   margin: auto;
@@ -96,6 +96,7 @@ header {
   -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  position: relative;
   a {
     color: $white;
     font-size: 12px;
@@ -105,11 +106,51 @@ header {
     background-repeat: no-repeat;
     background-position: left 1px center;
     background-size: 12px;
+    width: calc(100% - 40px);
+    height: 100%;
+    @include flex;
+    @include full-center;
   }
   img {
     width: 20px;
     height: 20px;
     border-left: $border-main;
+  }
+}
+.popup-menu {
+  @include flex;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  width: 110px;
+  box-sizing: border-box;
+  background-color: $lignter-black;
+  ul {
+    li {
+      border: none;
+      background-color: $lignter-black;
+      width: 100%;
+      border-bottom: $border-1px;
+      border-right: $border-1px;
+      color: $almost-white;
+      box-sizing: border-box;
+      &:last-child {
+        border-right: $border-1px;
+      }
+      &:hover {
+        background-color: $red;
+        transition: $standart-transition;
+      }
+      a {
+        font-size: 16px;
+        background: none;
+        width: 100%;
+        padding-left: 0;
+        font-weight: bold;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+    }
   }
 }
 section {
@@ -331,4 +372,7 @@ section {
 }
 .animate {
   transition: $standart-transition;
+}
+.kill-margin {
+  margin: 0;
 }
