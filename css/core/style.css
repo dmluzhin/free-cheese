@@ -150,7 +150,7 @@ header {
     .header-container .header--menu a:active {
       background: #222;
       margin-bottom: 15px;
-      transition: all 0.25s ease; }
+      transition: all 0.15s ease; }
   .header-container li {
     font-size: 16px;
     border-left: 5px solid #eee;
@@ -250,7 +250,8 @@ header {
   top: 25px;
   width: 110px;
   box-sizing: border-box;
-  background-color: #333; }
+  background-color: #333;
+  z-index: 100; }
   .popup-menu ul li {
     border: none;
     background-color: #333;
@@ -263,7 +264,7 @@ header {
       border-right: 1px solid #eee; }
     .popup-menu ul li:hover {
       background-color: #E2574C;
-      transition: all 0.25s ease; }
+      transition: all 0.15s ease; }
     .popup-menu ul li a {
       font-size: 16px;
       background: none;
@@ -371,7 +372,7 @@ section {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: white;
-  transition: all 0.25s ease; }
+  transition: all 0.15s ease; }
 
 .main-post--picture-box {
   display: -webkit-box;
@@ -458,6 +459,7 @@ section {
       box-sizing: border-box;
       color: #eee;
       padding: 40px;
+      padding-bottom: 50px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -472,9 +474,18 @@ section {
         padding: 0 0 20px 0; }
       .posts-container .news .post p {
         color: #eee; }
-      .posts-container .news .post img {
+      .posts-container .news .post a {
+        color: white;
+        text-decoration: none;
+        display: block;
         width: 100%;
-        padding: 10px 0; }
+        height: auto; }
+        .posts-container .news .post a:hover {
+          color: #E2574C;
+          transition: all 0.15s ease; }
+        .posts-container .news .post a img {
+          width: 100%;
+          padding: 10px 0; }
   .posts-container .adds {
     width: calc(35% - 40px); }
     .posts-container .adds .blocks {
@@ -557,7 +568,7 @@ section {
   display: none; }
 
 .animate {
-  transition: all 0.25s ease; }
+  transition: all 0.15s ease; }
 
 .kill-margin {
   margin: 0; }

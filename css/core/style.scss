@@ -125,6 +125,7 @@ header {
   width: 110px;
   box-sizing: border-box;
   background-color: $lignter-black;
+  z-index: 100;
   ul {
     li {
       border: none;
@@ -281,6 +282,7 @@ section {
       box-sizing: border-box;
       color: $almost-white;
       padding: $size-40px;
+      padding-bottom: 50px;
       @include flex;
       h1 {
         font-family: $raleway-regular;
@@ -290,9 +292,20 @@ section {
       p {
         color: $almost-white;
       }
-      img {
+      a {
+        color: $white;
+        text-decoration: none;
+        display: block;
         width: 100%;
-        padding: 10px 0;
+        height: auto;
+        &:hover {
+          color: $red;
+          transition: $standart-transition;
+        }
+        img {
+          width: 100%;
+          padding: 10px 0;
+        }
       }
     }
   }

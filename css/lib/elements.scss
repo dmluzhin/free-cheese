@@ -13,4 +13,8 @@
     background-color: rgba(226, 87, 76, 0.75);
     transition: $standart-transition;
   }
+  &:active {
+    bottom: 5px;
+    transition: $standart-transition;
+  }
 }
