@@ -271,7 +271,7 @@ section {
   }
 }
 .search-overlay {
-  display: none;
+  display: block;
   @include full-overlay;
   position: fixed;
   z-index: 9999;

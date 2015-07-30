@@ -10,16 +10,36 @@ function hideTr(elem) {
     } else {
         transition = 'transitionend';
     }
-    if (elem.classList.indexOf('disabled') != -1) {
-        elem.classList.remove('disabled');
-
+    if (elem.className.indexOf('disabled') != -1) {
+        if (elem.className.indexOf('animate') != -1) {
+            elem.classList.remove('animate');
+            elem.classList.remove('disabled');
+            elem.classList.add('invisible');
+            elem.classList.add('animate');
+            setTimeout(function(){
+                elem.classList.remove('invisible');
+                elem.classList.add('visible');
+            },1)
+        }
+        else {
+            elem.classList.remove('disabled');
+        }
     }
     else {
-        elem.classList.add('invisible');
-        elem.addEventListener(transition, function() {
-            elem.classList.remove('invisible');
-            elem.classList.add('disabled');
-        });
+        if (elem.className.indexOf('animate') != -1) {
+            elem.classList.remove('animate');
+            elem.classList.add('visible');
+            elem.classList.add('animate');
+            elem.classList.remove('visible');
+            elem.classList.add('invisible');
+            setTimeout(function(){
+                elem.classList.remove('invisible');
+                elem.classList.add('disabled');
+            },250)
+        }
+        else {
+            elem.classList.remove('disabled');
+        }
     }
 }
 function bindReady(handler){

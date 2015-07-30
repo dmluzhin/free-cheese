@@ -430,7 +430,7 @@ section {
       box-sizing: border-box; }
 
 .search-overlay {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -489,7 +489,7 @@ section {
   display: block; }
 
 .visible {
-  opacity: 1; }
+  opacity: 1 !important; }
 
 .invisible {
   opacity: 0; }

@@ -75,7 +75,7 @@
   opacity: 0;
 }
 @mixin visible {
-  opacity: 1;
+  opacity: 1 !important;
 }
 @mixin disabled {
   display: none;
