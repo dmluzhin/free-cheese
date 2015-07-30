@@ -38,7 +38,7 @@ function hideTr(elem) {
             },250)
         }
         else {
-            elem.classList.remove('disabled');
+            elem.classList.add('disabled');
         }
     }
 }
