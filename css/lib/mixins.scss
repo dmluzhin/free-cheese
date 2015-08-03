@@ -93,3 +93,10 @@
 @mixin disabled {
   display: none;
 }
+@mixin a-style-white {
+  color: $white;
+  text-decoration: none;
+  &:hover {
+    color: $red;
+  }
+}

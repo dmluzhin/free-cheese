@@ -418,6 +418,38 @@ section {
     cursor: pointer;
   }
 }
+footer {
+  @include flex;
+  @include full-center;
+  width: 100%;
+}
+.footer-container {
+  @include flex;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  h6 {
+    color: $white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  ul {
+    @include flex;
+    flex-direction: row;
+    li {
+      margin-left: 20px;
+      padding: 20px 0;
+      &:first-child {
+        margin-left: 0;
+      }
+      a {
+        @include a-style-white;
+        font-size: 14px;
+        font-family: $raleway-semi-bold;
+      }
+    }
+  }
+}
 .loupe {
   @include loupe-bg;
   width: 100%;
