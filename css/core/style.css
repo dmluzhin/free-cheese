@@ -156,8 +156,7 @@ header {
     font-size: 16px;
     border-left: 5px solid #eee;
     background: #eee;
-    display: flex;
-    height: 100%; }
+    display: flex; }
   .header-container li:last-child {
     border-right: 5px solid #eee; }
 
@@ -639,7 +638,8 @@ footer {
   .footer-container h6 {
     color: white;
     font-size: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-bottom: 10px; }
   .footer-container h6 {
     color: white;
     font-size: 24px;
@@ -665,7 +665,8 @@ footer {
         font-size: 14px;
         font-family: "RalewaySemiBold", "Arial", "sans-serif"; }
         .footer-container ul li a:hover {
-          color: #E2574C; }
+          color: #E2574C;
+          transition: all 0.15s ease; }
 
 .footer-colophon {
   display: -webkit-box;
@@ -687,7 +688,8 @@ footer {
   .footer-colophon h6 {
     color: white;
     font-size: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-bottom: 10px; }
   .footer-colophon p {
     color: #eee;
     font-size: 14px; }
@@ -712,7 +714,59 @@ footer {
   .footer-links h6 {
     color: white;
     font-size: 20px;
-    font-weight: bold; }
+    font-weight: bold;
+    padding-bottom: 10px; }
+
+.social-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  flex-direction: column; }
+  .social-block ul li {
+    padding: 10px 0;
+    margin-left: 0; }
+  .social-block img {
+    width: 75%;
+    height: auto;
+    border: 5px solid #222; }
+    .social-block img:hover {
+      margin-top: -5px;
+      transition: all 0.15s ease; }
+  .social-block .vk:hover {
+    background-color: #4E7195;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .social-block .tw:hover {
+    background-color: #55ACEE;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .social-block .inst:hover {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#957d60+0,957d60+36,ffffff+36,ffffff+36,ffffff+36,ffffff+100 */
+    background: #957d60;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 36%, #ffffff 36%, #ffffff 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #957d60), color-stop(36%, #957d60), color-stop(36%, #ffffff), color-stop(36%, #ffffff), color-stop(36%, #ffffff), color-stop(100%, #ffffff));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 36%, #ffffff 36%, #ffffff 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 36%, #ffffff 36%, #ffffff 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 36%, #ffffff 36%, #ffffff 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 36%, #ffffff 36%, #ffffff 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#957d60', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-9 */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .social-block .yt:hover {
+    background-color: #cc181e;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
+  .social-block .fb:hover {
+    background-color: #3a5795;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
 
 .loupe {
   background-image: url("../../resources/loupe.png");

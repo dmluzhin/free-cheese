@@ -98,6 +98,7 @@
   text-decoration: none;
   &:hover {
     color: $red;
+    transition: $standart-transition;
   }
 }
 @mixin footer-blocks {
@@ -111,5 +112,6 @@
     color: $white;
     font-size: 20px;
     font-weight: bold;
+    padding-bottom: 10px;
   }
 }

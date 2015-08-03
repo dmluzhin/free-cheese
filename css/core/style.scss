@@ -56,7 +56,6 @@ header {
     border-left: $border-main;
     background: $almost-white;
     display: flex;
-    height: 100%;
   }
   li:last-child {
     border-right: $border-main;
@@ -469,6 +468,63 @@ footer {
   @include footer-blocks;
   width: 50%;
   border-right: 10px solid #222;
+}
+.social-block {
+  @include flex;
+  ul {
+    li {
+      padding: 10px 0;
+      margin-left: 0;
+    }
+  }
+  img {
+    width: 75%;
+    height: auto;
+    border: 5px solid $black;
+    &:hover {
+      margin-top: -5px;
+      transition: $standart-transition;
+    }
+  }
+  .vk {
+    &:hover {
+      background-color: $vk;
+      box-shadow: $shadow;
+    }
+  }
+  .tw {
+    &:hover {
+      background-color: $tw;
+      box-shadow: $shadow;
+    }
+  }
+  .inst {
+    &:hover {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#957d60+0,957d60+36,ffffff+36,ffffff+36,ffffff+36,ffffff+100 */
+      background: #957d60; /* Old browsers */
+      background: -moz-linear-gradient(top,  #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 36%, #ffffff 36%, #ffffff 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#957d60), color-stop(36%,#957d60), color-stop(36%,#ffffff), color-stop(36%,#ffffff), color-stop(36%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 36%,#ffffff 36%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 36%,#ffffff 36%,#ffffff 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 36%,#ffffff 36%,#ffffff 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 36%,#ffffff 36%,#ffffff 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#957d60', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+      box-shadow: $shadow;
+    }
+  }
+  .yt {
+    &:hover {
+      background-color: $yt;
+      box-shadow: $shadow;
+    }
+  }
+  .fb {
+    &:hover {
+      background-color: $fb;
+      box-shadow: $shadow;
+    }
+  }
 }
 .loupe {
   @include loupe-bg;
