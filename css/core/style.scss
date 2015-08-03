@@ -422,12 +422,17 @@ footer {
   @include flex;
   @include full-center;
   width: 100%;
+  margin: auto;
+  background-color: $black;
+  border: 10px solid #222;
+  box-sizing: border-box;
+  padding: 0;
 }
 .footer-container {
   @include flex;
-  width: 100%;
-  max-width: 1200px;
-  padding: 20px;
+  @include footer-blocks;
+  flex-direction: row;
+  padding: 0;
   h6 {
     color: $white;
     font-size: 24px;
@@ -449,6 +454,22 @@ footer {
       }
     }
   }
+}
+.footer-colophon {
+  @include flex;
+  @include footer-blocks;
+  border-bottom: none;
+  width: 50%;
+  p {
+    color: $almost-white;
+    font-size: 14px;
+  }
+}
+.footer-links {
+  @include flex;
+  @include footer-blocks;
+  width: 50%;
+  border-right: 10px solid #222;
 }
 .loupe {
   @include loupe-bg;

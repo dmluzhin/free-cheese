@@ -100,3 +100,16 @@
     color: $red;
   }
 }
+@mixin footer-blocks {
+  width: 100%;
+  max-width: 1200px;
+  background-color: $black333;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  h6 {
+    color: $white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

@@ -613,7 +613,12 @@ footer {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%; }
+  width: 100%;
+  margin: auto;
+  background-color: #222;
+  border: 10px solid #222;
+  box-sizing: border-box;
+  padding: 0; }
 
 .footer-container {
   display: -webkit-box;
@@ -626,7 +631,16 @@ footer {
   flex-direction: column;
   width: 100%;
   max-width: 1200px;
-  padding: 20px; }
+  background-color: #333;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  flex-direction: row;
+  padding: 0; }
+  .footer-container h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
   .footer-container h6 {
     color: white;
     font-size: 24px;
@@ -653,6 +667,53 @@ footer {
         font-family: "RalewaySemiBold", "Arial", "sans-serif"; }
         .footer-container ul li a:hover {
           color: #E2574C; }
+
+.footer-colophon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #333;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  border-bottom: none;
+  width: 50%; }
+  .footer-colophon h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
+  .footer-colophon p {
+    color: #eee;
+    font-size: 14px; }
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  flex-basis: 100%;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #333;
+  padding: 40px;
+  box-sizing: border-box;
+  flex-basis: 50%;
+  width: 50%;
+  border-right: 10px solid #222; }
+  .footer-links h6 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold; }
 
 .loupe {
   background-image: url("../../resources/loupe.png");
