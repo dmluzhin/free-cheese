@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*COLORS*/
 /*BACKGROUNDS*/
 /*BORDERS*/
@@ -423,7 +424,7 @@ section {
 .posts-container {
   width: 100%;
   max-width: 1200px;
-  padding: 40px 0px;
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +479,58 @@ section {
         .posts-container .news .post a img {
           width: 100%;
           padding: 10px 0; }
+    .posts-container .news .flag {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 5px;
+      top: 0;
+      background-color: #eee;
+      cursor: pointer;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      flex-basis: 100%;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .posts-container .news .flag:after {
+        border: 15px solid #eee;
+        border-bottom: 15px solid transparent !important;
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: 0; }
+      .posts-container .news .flag.flag-news {
+        background-color: #E2574C; }
+        .posts-container .news .flag.flag-news:before {
+          content: 'н';
+          text-transform: uppercase;
+          color: white;
+          font-size: 18px;
+          font-weight: bold; }
+        .posts-container .news .flag.flag-news:after {
+          border-color: #E2574C; }
+      .posts-container .news .flag.flag-news:hover {
+        height: 142px; }
+        .posts-container .news .flag.flag-news:hover:before {
+          text-transform: lowercase;
+          padding: 10px;
+          content: 'н о в о с т и';
+          color: white; }
   .posts-container .adds {
     width: calc(35% - 40px); }
     .posts-container .adds .blocks {
