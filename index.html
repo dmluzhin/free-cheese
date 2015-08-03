@@ -20,14 +20,14 @@
 				<li><a href="#" id="search">поиск</a></li>
 			</ul>
 			<div class="header--profile">
-				<a href="#">johnlemon</a>
+				<a id="profile" href="#">johnlemon</a>
 				<img src="imgaes/logo-tiny.png">
 				<!--Спрятанный блок-->
-				<div class="popup-menu">
+				<div class="popup-menu" id="popup-menu">
 					<ul>
-						<li><a href="">Профиль</a></li>
-						<li><a href="">Рейтинг</a></li>
-						<li><a href="">Выйти</a></li>
+						<li><a class="disabled animate" href="#">Профиль</a></li>
+						<li><a class="disabled animate" href="#">Рейтинг</a></li>
+						<li><a class="disabled animate" href="#">Выйти</a></li>
 					</ul>
 				</div>
 
@@ -120,7 +120,7 @@
 	</section>
 	<footer></footer>
 	<div class="search-overlay disabled animate" id="search-overlay">
-		<div class="search-container">
+		<div class="search-container" id="search-container" onclick="return false">
 			<input type="text" name="query" class="query" placeholder="Поиск" autocomplete="off">
 			<button class="search-button" type="submit" id="searchsubmit" value=""><a class="loupe"></a></button>
 		</div>
