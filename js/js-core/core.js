@@ -1,4 +1,4 @@
-var scripts = ['js/slider.js', 'js/search.js', 'js/ready.js'];
+var scripts = ['js/slider.js', 'js/search.js', 'js/ready.js', 'js/profile.js'];
 function hideTr(elem) {
     var transition;
     if ('ontransitionend' in window) {
@@ -35,7 +35,7 @@ function hideTr(elem) {
             setTimeout(function(){
                 elem.classList.remove('invisible');
                 elem.classList.add('disabled');
-            },250)
+            },150)
         }
         else {
             elem.classList.add('disabled');

@@ -131,25 +131,33 @@ header {
       border: none;
       background-color: $lignter-black;
       width: 100%;
-      border-bottom: $border-1px;
-      border-right: $border-1px;
       color: $almost-white;
       box-sizing: border-box;
       &:last-child {
-        border-right: $border-1px;
+        border-right: 0;
       }
       &:hover {
         background-color: $red;
         transition: $standart-transition;
       }
       a {
+        border-bottom: $border-1px;
+        border-right: $border-1px;
         font-size: 16px;
         background: none;
         width: 100%;
-        padding-left: 0;
         font-weight: bold;
         padding: 10px;
         box-sizing: border-box;
+      }
+      a.disabled, a.invisible {
+        padding: 0;
+        height: 0;
+        border: 0;
+        overflow: hidden;
+      }
+      a.visible {
+        padding: 10px;
       }
     }
   }
