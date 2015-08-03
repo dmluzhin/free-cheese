@@ -541,7 +541,14 @@ section {
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
       background: #151515;
       border-top: 10px solid #eee;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      padding: 10px;
+      color: white; }
+      .posts-container .adds .blocks a img {
+        width: 100%;
+        height: auto; }
+      .posts-container .adds .blocks p {
+        color: white; }
 
 .search-overlay {
   display: block;
