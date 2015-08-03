@@ -734,8 +734,7 @@ footer {
     height: auto;
     border: 5px solid #222; }
     .social-block img:hover {
-      margin-top: -5px;
-      transition: all 0.15s ease; }
+      margin-top: -5px; }
   .social-block .vk:hover {
     background-color: #4E7195;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }

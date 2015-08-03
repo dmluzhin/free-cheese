@@ -483,7 +483,6 @@ footer {
     border: 5px solid $black;
     &:hover {
       margin-top: -5px;
-      transition: $standart-transition;
     }
   }
   .vk {
@@ -509,7 +508,6 @@ footer {
       background: -ms-linear-gradient(top,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 36%,#ffffff 36%,#ffffff 100%); /* IE10+ */
       background: linear-gradient(to bottom,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 36%,#ffffff 36%,#ffffff 100%); /* W3C */
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#957d60', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-
       box-shadow: $shadow;
     }
   }
