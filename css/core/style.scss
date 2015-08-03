@@ -1,3 +1,4 @@
+@charset "utf-8";
 @import "../lib/mixins";
 @import "../lib/varibles";
 @import "../lib/fonts";
@@ -261,7 +262,7 @@ section {
 .posts-container {
   width: 100%;
   max-width: $size-1200px;
-  padding: $size-40px 0px;
+  padding: $size-40px 0;
   @include flex;
   flex-direction: row;
   overflow: hidden;
@@ -305,6 +306,48 @@ section {
         img {
           width: 100%;
           padding: 10px 0;
+        }
+      }
+    }
+    .flag {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 5px;
+      top: 0;
+      background-color: $almost-white;
+      cursor: pointer;
+      text-align: center;
+      @include flex;
+      @include full-center;
+      &:after {
+        border: 15px solid $almost-white;
+        border-bottom: 15px solid transparent !important;
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+      }
+      &.flag-news {
+        background-color: $red;
+        &:before {
+          content: 'н';
+          text-transform: uppercase;
+          color: $white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        &:after {
+          border-color: $red;
+        }
+      }
+      &.flag-news:hover {
+        height: 142px;
+        &:before {
+          text-transform: lowercase;
+          padding: 10px;
+          content: 'н о в о с т и';
+          color: $white;
         }
       }
     }
