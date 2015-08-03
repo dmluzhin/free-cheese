@@ -379,7 +379,6 @@ section {
   display: block;
   @include full-overlay;
   position: fixed;
-  z-index: 9999;
 }
 .search-container {
   position: absolute;
