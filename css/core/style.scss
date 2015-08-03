@@ -211,7 +211,6 @@ section {
   -ms-flex-pack: justify;
   justify-content: space-between;
   background: $white;
-  transition: $standart-transition;
 }
 .main-post--picture-box {
   display: -webkit-box;
@@ -415,6 +414,10 @@ section {
     outline: none;
     font-size: 30px;
   }
+  input.turtle {
+    border-radius: 0 50px 50px 0;
+    border-color: green;
+  }
   .search-button {
     position: absolute;
     width: 100px;
@@ -425,6 +428,21 @@ section {
     border: none;
     outline: none;
     cursor: pointer;
+  }
+  .search-button.turtle {
+    border-radius: 0 50px 50px 0;
+    background-color: green;
+  }
+  .loupe {
+    @include loupe-bg;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+  }
+  .loupe.turtle {
+    transform: rotate(-45deg);
+    margin: -4px 27px 0;
   }
 }
 footer {
@@ -534,13 +552,6 @@ footer {
       box-shadow: $shadow;
     }
   }
-}
-.loupe {
-  @include loupe-bg;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: block;
 }
 .visible {
   @include visible;

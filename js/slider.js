@@ -14,7 +14,7 @@ if (slides.length > 1) {
 		step.onclick = function() {
 			var numStep = this.getAttribute('data-step'), stepDots = document.getElementsByClassName('slider_footer-step');
 			for (var i=0; i<slides.length; i+=1) {
-				slides[i].className = slides[i].className.split(' ')[0];
+				slides[i].classList.remove('active');
 				stepDots[i].className = stepDots[i].className.split(' ')[0];
 				stepDots[i].setAttribute('data-select', 'false');
 			}
