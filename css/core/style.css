@@ -360,7 +360,11 @@ section {
   cursor: pointer;
   top: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  background-image: url("../../resources/arrow-left.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%; }
   .arrow-left:hover {
     opacity: 0.8; }
   .arrow-left:active {
@@ -376,7 +380,11 @@ section {
   cursor: pointer;
   top: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  background-image: url("../../resources/arrow-right.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%; }
   .arrow-right:hover {
     opacity: 0.8; }
   .arrow-right:active {
