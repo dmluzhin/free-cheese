@@ -10,6 +10,12 @@
     direction: column;
   }
 }
+@mixin flex-only {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+}
 @mixin full-center {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -113,5 +119,20 @@
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
+  }
+}
+@mixin arrow {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background-color: $black;
+  opacity: 0.5;
+  margin: auto;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 1;
   }
 }
