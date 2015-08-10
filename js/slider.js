@@ -1,5 +1,7 @@
-var sliderBlock = document.getElementById('slider'), slides = sliderBlock.getElementsByClassName('main-post-container'), stepBlock, step, i;
+var sliderBlock = document.getElementById('slider'), slides = sliderBlock.getElementsByClassName('main-post-container'), stepBlock, step, i,
+	slideLeft = sliderBlock.getElementsByClassName('arrow-left'), slideRight = sliderBlock.getElementsByClassName('arrow-right');
 if (slides.length > 1) {
+	slideLeft[0].classList.add('disabled');
 	stepBlock = document.createElement('div');
 	stepBlock.className = 'slider_footer';
 	for (i=0; i<slides.length; i+=1) {
@@ -21,11 +23,57 @@ if (slides.length > 1) {
 			stepDots[numStep].setAttribute('data-select', 'true');
 			stepDots[numStep].classList.add('slider_footer-step-active');
 			slides[numStep].className += ' active';
+			checkButtons(numStep);
 			resizeSlider(true);
 		};
 		stepBlock.appendChild(step);
 	}
+	function checkSelect(stepDots) {
+		var step;
+		for (var i=0; i<stepDots.length; i+=1) {
+			if (stepDots[i].getAttribute('data-select') == 'true') {
+				stepDots[i].setAttribute('data-select', 'false');
+				stepDots[i].className = stepDots[i].className.split(' ')[0];
+				step = i;
+				break;
+			}
+		}
+		return step;
+	}
+	function checkButtons(now) {
+		if (now == 0) {
+			slideLeft[0].classList.add('disabled');
+			slideRight[0].classList.remove('disabled')
+		}
+		else if (now == slides.length-1) {
+			slideLeft[0].classList.remove('disabled');
+			slideRight[0].classList.add('disabled');
+		}
+		else {
+			slideLeft[0].classList.remove('disabled');
+			slideRight[0].classList.remove('disabled');
+		}
+		resizeSlider(true);
+	}
+	slideLeft[0].onclick = function() {
+		var stepDots = document.getElementsByClassName('slider_footer-step'), now = checkSelect(stepDots), now = now-1;
+		stepDots[now].setAttribute('data-select', 'true');
+		stepDots[now].classList.add('slider_footer-step-active');
+		slides[now].className += ' active';
+		checkButtons(now);
+	};
+	slideRight[0].onclick = function() {
+		var stepDots = document.getElementsByClassName('slider_footer-step'), now = checkSelect(stepDots), now = now+1;
+		stepDots[now].setAttribute('data-select', 'true');
+		stepDots[now].classList.add('slider_footer-step-active');
+		slides[now].className += ' active';
+		checkButtons(now);
+	};
 	sliderBlock.parentNode.appendChild(stepBlock);
+}
+else {
+	slideLeft[0].classList.add('disabled');
+	slideRight[0].classList.add('disabled');
 }
 window.onresize = function() {
 	resizeSlider(false);
