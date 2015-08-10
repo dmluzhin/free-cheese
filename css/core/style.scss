@@ -125,7 +125,7 @@ header {
   width: 110px;
   box-sizing: border-box;
   background-color: $lignter-black;
-  z-index: 100;
+  z-index: 1;
   ul {
     li {
       border: none;
@@ -352,7 +352,29 @@ section {
         &:before {
           text-transform: lowercase;
           padding: 10px;
-          content: 'н о в о с т и';
+          content: 'н о в о с т ь';
+          color: $white;
+        }
+      }
+      &.flag-article {
+        background-color: $gold;
+        &:before {
+          content: 'с';
+          text-transform: uppercase;
+          color: $white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+        &:after {
+          border-color: $gold;
+        }
+      }
+      &.flag-article:hover {
+        height: 122px;
+        &:before {
+          text-transform: lowercase;
+          padding: 10px;
+          content: 'с т а т ь я';
           color: $white;
         }
       }
@@ -388,6 +410,7 @@ section {
   display: block;
   @include full-overlay;
   position: fixed;
+  z-index: 1;
 }
 .search-container {
   position: absolute;
@@ -397,6 +420,7 @@ section {
   left: 0; right: 0;
   margin: auto;
   box-shadow: $shadow;
+  z-index: 1;
   input {
     position: absolute;
     width: 90%;
@@ -442,7 +466,7 @@ section {
   }
   .loupe.turtle {
     transform: rotate(-45deg);
-    margin: -4px 27px 0;
+    margin: -4px 20px 0;
   }
 }
 footer {
@@ -529,7 +553,7 @@ footer {
   .inst {
     &:hover {
       background: #fff;
-      background: -moz-linear-gradient(top,  #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 100%); /* FF3.6+ */
+      background: -moz-linear-gradient(top,  #957d60 0%, #957d60 36%, #ffffff 36%, #ffffff 100%);
       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#957d60), color-stop(36%,#957d60), color-stop(36%,#ffffff), color-stop(100%,#ffffff));
       background: -webkit-linear-gradient(top,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 100%);
       background: -o-linear-gradient(top,  #957d60 0%,#957d60 36%,#ffffff 36%,#ffffff 100%);
