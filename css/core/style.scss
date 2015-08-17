@@ -175,7 +175,7 @@ section {
   align-items: center;
 }
 .slider {
-  @include flex-only;
+  @include flex;
   width: 100%;
   height: calc(100% - 30px);
   max-width: $size-1200px;
@@ -479,9 +479,8 @@ footer {
   padding: 0;
 }
 .footer-container {
-  @include flex;
+  @include flex-row;
   @include footer-blocks;
-  flex-direction: row;
   padding: 0;
   h6 {
     color: $white;
@@ -516,8 +515,9 @@ footer {
   }
 }
 .footer-links {
-  @include flex;
+  @include flex-only;
   @include footer-blocks;
+  flex-direction: column;
   width: 50%;
   border-right: 10px solid #222;
 }
