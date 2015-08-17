@@ -135,16 +135,19 @@
 }
 @mixin arrow {
   position: absolute;
-  width: 32px;
-  height: 32px;
-  background-color: $black;
-  opacity: 0.5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $red;
   margin: auto;
   cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.46);
   &:hover {
     opacity: 0.8;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.46);
   }
   &:active {
     opacity: 1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.46);
   }
 }

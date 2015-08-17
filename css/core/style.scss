@@ -166,18 +166,19 @@ section {
   @include section;
 }
 .main-post {
-  height: 420px;
+  height: 460px;
   background: $almost-white;
   @include flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
 }
 .slider {
   @include flex;
   width: 100%;
-  height: calc(100% - 30px);
+  height: calc(100% - 60px);
   max-width: $size-1200px;
   overflow: hidden;
   align-items: center;
@@ -186,8 +187,8 @@ section {
 }
 .slider_footer {
   width: 100%;
-  height: 30px;
-  display: flex;
+  height: 60px;
+  @include flex-only;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -204,23 +205,23 @@ section {
 .arrow-left {
   @include arrow;
   top: 0; bottom: 0;
-  left: 0;
+  left: 5px;
   background: {
     image: url("../../resources/arrow-left.png");
     repeat: no-repeat;
-    position: center center;
+    position: right 3px center;
     size: 100%;
   };
 }
 .arrow-right {
   @include arrow;
   top: 0; bottom: 0;
-  right: 0;
+  right: 5px;
   background: {
     image: url("../../resources/arrow-right.png");
     repeat: no-repeat;
-    position: center center;
-    size: 100%;
+    position: left 3px center;
+    size: 90%;
   };
 }
 .main-post-container {
