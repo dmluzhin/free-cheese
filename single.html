@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/core/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/core/style.css">
+	<link rel="stylesheet" type="text/css" href="css/lib/elements.css">
+	<script src="js/js-core/core.js"></script>
+	<title>Free-Cheese.com | Главная</title>
+</head>
+<body>
+<header>
+	<div class="header-container">
+		<a class="header--logo" href="/"><img src="resources/Logo.svg"></a>
+		<ul class="header--menu">
+			<li><a href="#">розыгрыши</a></li>
+			<li><a href="#">новости</a></li>
+			<li><a href="#">статьи</a></li>
+			<li><a href="#" id="search">поиск</a></li>
+		</ul>
+		<div class="header--profile animate">
+			<a id="profile" href="#">johnlemon</a>
+			<img src="imgaes/logo-tiny.png">
+			<!--Спрятанный блок-->
+			<div class="popup-menu" id="popup-menu">
+				<ul>
+					<li><a class="disabled animate" href="#">Профиль</a></li>
+					<li><a class="disabled animate" href="#">Рейтинг</a></li>
+					<li><a class="disabled animate" href="#">Выйти</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</header>
+<section class="page">
+	<div class="page_list">
+		<div class="page_list_left-column">
+			<div class="page_list_head-image-container">
+				<img src="http://www.ferra.ru/images/422/422271.jpg" />
+			</div>
+			<div class="page-list-content">
+				<h1>#1: Exploring CSS Layout Techniques While Trying To Get a Subtitle to Wrap</h1>
+				<p>The CSS-Tricks front end is usually pretty darn fast, because most pages are cached (and don't need to be dynamically generated when requested). However, up until recently, the CSS-Tricks WordPress admin didn't have the same luck.</p>
+				<p>In particular, the post editing screen was slow. Painfully slow. Saving a draft took several seconds, which is enough to break your flow in the middle of writing an article.</p>
+				<p>The CSS-Tricks front end is usually pretty darn fast, because most pages are cached (and don't need to be dynamically generated when requested). However, up until recently, the CSS-Tricks WordPress admin didn't have the same luck.</p>
+				<p>In particular, the post editing screen was slow. Painfully slow. Saving a draft took several seconds, which is enough to break your flow in the middle of writing an article.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="footer-container">
+		<div class="footer-links">
+			<h6>Полезные ссылки</h6>
+			<ul>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Реклама</a></li>
+				<li><a href="#">Вакансии</a></li>
+			</ul>
+			<div class="social-block">
+				<ul>
+					<li><a href="#" target="_blank"><img class="vk animate" src="resources/vk.png"></a></li>
+					<li><a href="#" target="_blank"><img class="tw animate" src="resources/tw.png"></a></li>
+					<li><a href="#" target="_blank"><img class="inst animate" src="resources/inst.png"></a></li>
+					<li><a href="#" target="_blank"><img class="yt animate" src="resources/yt.png"></a></li>
+					<li><a href="#" target="_blank"><img class="fb animate" src="resources/fb.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-colophon">
+			<h6>Колофон</h6>
+			<p>CSS-Tricks* is created, written by, and maintained by Chris Coyier. It is built on WordPress, hosted by Media Temple, and the assets are served by MaxCDN. The fonts are Source Sans and Source Code Pro. It is made possible by viewers like you who subscribe to The Lodge and through advertising for products and services I like.</p>
+		</div>
+	</div>
+</footer>
+<div class="search-overlay disabled animate" id="search-overlay">
+</div>
+<div class="search-container disabled animate" id="search-container">
+	<input class="animate" type="text" name="query" class="query" placeholder="Поиск" autocomplete="off" id="search-input">
+	<button class="search-button animate" type="submit" id="search-submit" value=""><a class="loupe animate"></a></button>
+</div>
+</body>
+</html>

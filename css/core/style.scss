@@ -408,6 +408,37 @@ section {
     }
   }
 }
+.page {
+  @include flex;
+  @include full-center;
+}
+.page_list {
+  @include flex;
+  width: 100%;
+  min-height: 500px;
+  max-width: $size-1200px;
+  h1 {
+    @include main-header;
+  }
+}
+.page_list_head-image-container {
+  width: 100%;
+  box-shadow: $shadow;
+  img {
+    width: 100%;
+    @include flex-only;
+  }
+}
+.page_list_left-column {
+  width: 70%;
+  background-color: $white;
+}
+.page-list-content {
+  width: 100%;
+  padding: $size-40px;
+  box-sizing: border-box;
+  text-align: justify;
+}
 .search-overlay {
   display: block;
   @include full-overlay;
