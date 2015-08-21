@@ -174,6 +174,7 @@ section {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
+  padding-top: 25px;
 }
 .slider {
   @include flex;
@@ -290,54 +291,12 @@ section {
   align-items: center;
 }
 .posts-container {
-  width: 100%;
-  max-width: $size-1200px;
-  padding: $size-40px 0;
-  @include flex;
-  flex-direction: row;
-  overflow: hidden;
-  background: $black333;
+@include content-container;
   .news {
     width: 65%;
     padding-right: $size-40px;
     .post {
-      position: relative;
-      width: calc(100% - 40px);
-      min-height: 100px;
-      margin-bottom: $size-40px;
-      overflow: hidden;
-      box-shadow: $shadow;
-      background: $posts-black;
-      border-top: $border-post;
-      margin-left: $size-40px;
-      box-sizing: border-box;
-      color: $almost-white;
-      padding: $size-40px;
-      padding-bottom: 50px;
-      @include flex;
-      h1 {
-        font-family: $raleway-regular;
-        font-size: 30px;
-        padding: 0 0 20px 0;
-      }
-      p {
-        color: $almost-white;
-      }
-      a {
-        color: $white;
-        text-decoration: none;
-        display: block;
-        width: 100%;
-        height: auto;
-        &:hover {
-          color: $red;
-          transition: $standart-transition;
-        }
-        img {
-          width: 100%;
-          padding: 10px 0;
-        }
-      }
+      @include post;
     }
     .flag {
       position: absolute;
@@ -385,59 +344,112 @@ section {
   .adds {
     width: calc(35% - 40px);
     .blocks {
-      width: calc(100% - 40px);
-      min-height: 100px;
-      margin-bottom: $size-40px;
-      margin-right: $size-40px;
-      overflow: hidden;
-      box-shadow: $shadow;
-      background: $posts-black;
-      border-top: $border-post;
-      box-sizing: border-box;
-      padding: 10px;
-      color: $white;
-      a {
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-      p {
-        color: $white;
-      }
+      @include blocks;
     }
   }
 }
 .page {
-  @include flex;
+  @include content-container;
+  margin: auto;
+  .news {
+    @include flex;
+    width: 75%;
+      .post {
+        @include post;
+        background-color: $almost-white;
+        color: $black;
+        border-top: none;
+        p {
+          color: $black;
+        }
+        h2 {
+          padding-bottom: 20px;
+          font-size: 32px;
+        }
+        h3, h4, h5 {
+          font-size: 26px;
+          padding: 20px 0;
+       }
+        img {
+          @include fullwidth-40;
+          padding: 10px 0;
+          height: auto;
+        }
+      .head-image {
+        @include flex;
+        @include fullwidth-40;
+        margin-top: -40px;
+        margin-bottom: 30px;
+        position: relative;
+        box-shadow: $shadow;
+        overflow: hidden;
+        img {
+          @include img-main;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .adds {
+    width: calc(25% - 40px);
+    margin-left: 40px;
+   .blocks {
+    @include blocks;
+   }
+  }
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 10px 0;
+}
+.video iframe,
+.video object,
+.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.overlay {
+  @include flex-only;
   @include full-center;
-}
-.page_list {
-  @include flex;
   width: 100%;
-  min-height: 500px;
-  max-width: $size-1200px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   h1 {
-    @include main-header;
-  }
-}
-.page_list_head-image-container {
-  width: 100%;
-  box-shadow: $shadow;
-  img {
-    width: 100%;
     @include flex-only;
+    @include full-center;
+    font-size: 42px !important;
+    padding: 20px !important;
+    background-color: rgba(51, 51, 51, 0.65);
+    color: $almost-white;
+    height: 100%;
   }
 }
-.page_list_left-column {
-  width: 70%;
-  background-color: $white;
-}
-.page-list-content {
-  width: 100%;
-  padding: $size-40px;
+.author-info {
+  @include fullwidth-40;
+  height: 100px;
+  border-top: $border-main;
+  border-color: $black333;
+  margin-top: 20px;
+  padding: 10px 40px;
   box-sizing: border-box;
-  text-align: justify;
+  a {
+    width: auto !important;
+    display: inline !important;
+    color: $red !important;
+    &:hover {
+      text-decoration: underline !important;
+      transition: $standart-transition;
+    }
+  }
 }
 .search-overlay {
   display: block;

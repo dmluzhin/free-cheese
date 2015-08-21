@@ -46,7 +46,7 @@
   width: 100%;
   height: 80px;
   background: $black;
-  border-bottom: $border-30;
+  border-bottom: $border-main;
   @include flex;
 }
 @mixin fullsize {
@@ -155,4 +155,82 @@
   font-family: "RalewayRegular", "Arial", "sans-serif";
   font-size: 30px;
   padding: 0 0 20px 0;
+}
+@mixin content-container {
+  width: 100%;
+  max-width: $size-1200px;
+  padding: $size-40px 0;
+  @include flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: $black333;
+}
+@mixin post {
+  position: relative;
+  width: calc(100% - 40px);
+  min-height: 100px;
+  margin-bottom: $size-40px;
+  overflow: hidden;
+  box-shadow: $shadow;
+  background: $posts-black;
+  border-top: $border-post;
+  margin-left: $size-40px;
+  box-sizing: border-box;
+  color: $almost-white;
+  padding: $size-40px;
+  padding-bottom: 50px;
+  @include flex;
+  h1 {
+    font-family: $raleway-regular;
+    font-size: 30px;
+    padding: 0 0 20px 0;
+  }
+  p {
+    color: $almost-white;
+  }
+  a {
+    color: $white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: auto;
+    &:hover {
+      color: $red;
+      transition: $standart-transition;
+    }
+    img {
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+}
+@mixin blocks {
+  width: calc(100% - 40px);
+  min-height: 100px;
+  margin-bottom: $size-40px;
+  margin-right: $size-40px;
+  overflow: hidden;
+  box-shadow: $shadow;
+  background: $posts-black;
+  border-top: $border-post;
+  box-sizing: border-box;
+  padding: 10px;
+  color: $white;
+  a {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  p {
+   color: $white;
+  }
+}
+@mixin img-main {
+  width: 100%;
+  height: auto;
+}
+@mixin fullwidth-40 {
+  width: calc(100% + 80px);
+  margin-left: -40px;
 }
