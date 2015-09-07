@@ -84,7 +84,7 @@ p {
   font-size: 18px; }
 
 body {
-  background-color: #141414;
+  background-color: #222;
   font-family: "RalewayRegular", "Arial", "sans-serif"; }
 
 header {
@@ -494,7 +494,6 @@ section {
     padding: 10px;
     line-height: 35px; }
   .main-post--description p {
-    font-family: "RalewayExtraLight", "Arial", "sans-serif";
     font-size: 20px;
     line-height: 140%;
     padding: 10px; }
@@ -643,6 +642,7 @@ section {
   .posts-container .adds {
     width: calc(35% - 40px); }
     .posts-container .adds .blocks {
+      position: relative;
       width: calc(100% - 40px);
       min-height: 100px;
       margin-bottom: 40px;
@@ -652,13 +652,31 @@ section {
       background: #151515;
       border-top: 10px solid #eee;
       box-sizing: border-box;
-      padding: 10px;
-      color: white; }
-      .posts-container .adds .blocks a img {
-        width: 100%;
-        height: auto; }
+      color: white;
+      padding-bottom: 40px; }
+      .posts-container .adds .blocks a {
+        text-decoration: none;
+        color: white;
+        width: 100%; }
+        .posts-container .adds .blocks a h1, .posts-container .adds .blocks a h2, .posts-container .adds .blocks a h3 {
+          font-size: 24px;
+          padding: 10px 0; }
+          .posts-container .adds .blocks a h1:hover, .posts-container .adds .blocks a h2:hover, .posts-container .adds .blocks a h3:hover {
+            color: #E2574C;
+            transition: all 0.15s ease; }
       .posts-container .adds .blocks p {
-        color: white; }
+        color: white;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 18px; }
+      .posts-container .adds .blocks img {
+        width: 100%;
+        height: auto;
+        display: block; }
+    .posts-container .adds .blocks--header-block {
+      position: relative; }
 
 .page {
   width: 100%;
@@ -722,7 +740,8 @@ section {
       flex-direction: column;
       background-color: #eee;
       color: #222;
-      border-top: none; }
+      border-top: none;
+      padding-bottom: 0; }
       .page .news .post h1 {
         font-family: "RalewayRegular", "Arial", "sans-serif";
         font-size: 30px;
@@ -783,6 +802,7 @@ section {
     width: calc(25% - 40px);
     margin-left: 40px; }
     .page .adds .blocks {
+      position: relative;
       width: calc(100% - 40px);
       min-height: 100px;
       margin-bottom: 40px;
@@ -792,13 +812,31 @@ section {
       background: #151515;
       border-top: 10px solid #eee;
       box-sizing: border-box;
-      padding: 10px;
-      color: white; }
-      .page .adds .blocks a img {
-        width: 100%;
-        height: auto; }
+      color: white;
+      padding-bottom: 40px; }
+      .page .adds .blocks a {
+        text-decoration: none;
+        color: white;
+        width: 100%; }
+        .page .adds .blocks a h1, .page .adds .blocks a h2, .page .adds .blocks a h3 {
+          font-size: 24px;
+          padding: 10px 0; }
+          .page .adds .blocks a h1:hover, .page .adds .blocks a h2:hover, .page .adds .blocks a h3:hover {
+            color: #E2574C;
+            transition: all 0.15s ease; }
       .page .adds .blocks p {
-        color: white; }
+        color: white;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 18px; }
+      .page .adds .blocks img {
+        width: 100%;
+        height: auto;
+        display: block; }
+      .page .adds .blocks .blocks--header-block {
+        position: relative; }
 
 .video {
   position: relative;
@@ -821,6 +859,14 @@ section {
   display: -ms-flexbox;
   display: flex;
   display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -837,7 +883,7 @@ section {
   position: absolute;
   top: 0;
   left: 0; }
-  .overlay h1 {
+  .overlay h1, .overlay h2, .overlay h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -857,17 +903,45 @@ section {
     padding: 20px !important;
     background-color: rgba(51, 51, 51, 0.65);
     color: #eee;
-    height: 100%; }
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box; }
+  .overlay h2 {
+    font-size: 36px !important;
+    background-color: transparent !important; }
+
+.flex-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start; }
+
+.colored-black {
+  background: rgba(0, 0, 0, 0.35); }
 
 .author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
   width: calc(100% + 80px);
   margin-left: -40px;
+  justify-content: space-between;
   height: 100px;
   border-top: 5px solid #eee;
   border-color: #333;
   margin-top: 20px;
   padding: 10px 40px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  align-items: center; }
   .author-info a {
     width: auto !important;
     display: inline !important;
@@ -875,6 +949,47 @@ section {
     .author-info a:hover {
       text-decoration: underline !important;
       transition: all 0.15s ease; }
+  .author-info li {
+    padding: 7px 0; }
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 25%;
+  height: calc(100% + 20px);
+  margin-right: -40px;
+  border-left: 5px solid #eee;
+  border-color: #333;
+  padding: 0 20px; }
+
+.sharing-block {
+  width: calc(75% - 40px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex; }
 
 .search-overlay {
   display: block;
