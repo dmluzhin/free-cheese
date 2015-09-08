@@ -46,4 +46,27 @@
     border-radius: 20px;
     transition: all 0.15s ease; }
 
+.answer-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #eee;
+  padding: 9px 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+  background-color: #E2574C;
+  text-align: center;
+  box-sizing: border-box; }
+  .answer-button:hover {
+    background-color: rgba(226, 87, 76, 0.75);
+    transition: all 0.15s ease; }
+  .answer-button:active {
+    width: 70%;
+    left: 15%;
+    border-radius: 20px;
+    transition: all 0.15s ease; }
+
 /*# sourceMappingURL=elements.css.map */

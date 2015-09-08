@@ -838,6 +838,20 @@ section {
       .page .adds .blocks .blocks--header-block {
         position: relative; }
 
+.explanation {
+  position: relative; }
+  .explanation h2 {
+    font-size: 22px;
+    padding: 15px;
+    text-align: left; }
+  .explanation ul {
+    padding: 10px; }
+  .explanation li {
+    font-size: 16px;
+    margin-bottom: 5px; }
+    .explanation li label {
+      margin-left: 5px; }
+
 .video {
   position: relative;
   padding-bottom: 56.25%;

@@ -43,3 +43,28 @@
     transition: $standart-transition;
   }
 }
+.answer-button {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: #eee;
+  padding: 9px 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  cursor: pointer;
+  display: block;
+  background-color: $red;
+  text-align: center;
+  box-sizing: border-box;
+  &:hover {
+    background-color: rgba(226, 87, 76, 0.75);
+    transition: $standart-transition;
+  }
+  &:active {
+    width: 70%;
+    left: 15%;
+    border-radius: 20px;
+    transition: $standart-transition;
+  }
+}
