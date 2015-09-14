@@ -207,6 +207,7 @@ section {
   @include arrow;
   top: 0; bottom: 0;
   left: 5px;
+  opacity: 0.3;
   background: {
     image: url("../../resources/arrow-left.png");
     repeat: no-repeat;
@@ -218,6 +219,7 @@ section {
   @include arrow;
   top: 0; bottom: 0;
   right: 5px;
+  opacity: 0.3;
   background: {
     image: url("../../resources/arrow-right.png");
     repeat: no-repeat;
@@ -352,6 +354,7 @@ section {
 }
 .pagination {
   @include flex-only;
+  @include full-center;
   width: calc(100% - 40px);
   height: 50px;
   padding: $size-40px;
@@ -359,6 +362,31 @@ section {
   background-color: $black;
   box-sizing: border-box;
   margin: $size-40px;
+  ul {
+    @include flex-only;
+    width: 100%;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  li {
+    display: inline-block;
+    border: $border-main;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    &:hover {
+      background-color: $red;
+      color: $black;
+    }
+    a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+    }
+  }
 }
 .page {
   @include content-container;
@@ -518,6 +546,13 @@ section {
   width: calc(75% - 40px);
   height: 100%;
   @include flex-only;
+  @include full-center;
+  li {
+    margin: 0 7px;
+  }
+  p {
+    margin-right: 13px;
+  }
 }
 .search-overlay {
   display: block;
