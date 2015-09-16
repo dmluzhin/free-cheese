@@ -1,14 +1,18 @@
 @import "varibles";
-
+@import "mixins";
+.buttons-container {
+  width: 100%;
+  @include flex-only;
+  justify-content: flex-end;
+}
 .show-more-button {
-  position: absolute;
-  bottom: 10px; right: 10px;
   background: $red;
   color: $almost-white;
   padding: 9px 16px;
   line-height: 1.4;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 20px;
   &:hover {
     background-color: rgba(226, 87, 76, 0.75);
     transition: $standart-transition;
