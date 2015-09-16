@@ -87,6 +87,7 @@ body {
   background-color: #222;
   font-family: "RalewayRegular", "Arial", "sans-serif"; }
 
+/***HEADER STYLES STARTING FROM HERE***/
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +305,8 @@ header {
     .popup-menu ul li a.visible {
       padding: 10px; }
 
+/***HEADER STYLES ENDS HERE***/
+/***MAIN BLOCKS STARTING FROM HERE***/
 section {
   width: 100%;
   min-height: 200px; }
@@ -330,6 +333,7 @@ section {
   position: relative;
   padding-top: 25px; }
 
+/***SLIDER STYLES STARTING FROM HERE***/
 .slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,6 +504,8 @@ section {
     line-height: 140%;
     padding: 10px; }
 
+/***SLIDER STYLES ENDS HERE***/
+/***POSTS STYLES STARTS HERE***/
 .posts {
   background: #222;
   display: -webkit-box;
@@ -537,7 +543,8 @@ section {
   flex-direction: column;
   flex-direction: row;
   overflow: hidden;
-  background: #333; }
+  background: #333;
+  /***SIDEBAR STYLES STARTS HERE***/ }
   .posts-container .news {
     width: 65%;
     padding-right: 40px; }
@@ -680,6 +687,9 @@ section {
     .posts-container .adds .blocks--header-block {
       position: relative; }
 
+/***SIDEBAR STYLES ENDS HERE***/
+/***POSTS STYLES ENDS HERE***/
+/***PAGINATION ELEMENTS STARTS HERE***/
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -728,6 +738,9 @@ section {
       padding: 15px;
       text-decoration: none; }
 
+/***PAGINATION STYLES ENDS HERE***/
+/***MAIN BLOCKS STYLES ENDS HERE***/
+/***INSIDE PAGE STYLES STARTS HERE***/
 .page {
   width: 100%;
   max-width: 1200px;
@@ -747,7 +760,8 @@ section {
   flex-direction: row;
   overflow: hidden;
   background: #333;
-  margin: auto; }
+  margin: auto;
+  /***SIDEBAR IN INSIDE PAGE STARTS HERE***/ }
   .page .news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -888,6 +902,7 @@ section {
       .page .adds .blocks .blocks--header-block {
         position: relative; }
 
+/***SIDEBAR IN INSIDE PAGE ENDS HERE***/
 .explanation {
   position: relative; }
   .explanation h2 {
@@ -1136,6 +1151,7 @@ section {
     transform: rotate(-45deg);
     margin: -4px 27px 0; }
 
+/***FOOTER STYLES STARTS HERE***/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1268,6 +1284,8 @@ footer {
     font-weight: bold;
     padding-bottom: 10px; }
 
+/***FOOTER STYLES ENDS HERE***/
+/***SOCIAL STYLES STARTS HERE***/
 .social-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1313,6 +1331,8 @@ footer {
     background-color: #3a5795;
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.3); }
 
+/***SOCIAL STYLES ENDS HERE***/
+/***HELPFUL STYLES STARTS HERE***/
 .visible {
   opacity: 1 !important; }
 
@@ -1327,5 +1347,7 @@ footer {
 
 .kill-margin {
   margin: 0; }
+
+/***THE VERY END***/
 
 /*# sourceMappingURL=style.css.map */
