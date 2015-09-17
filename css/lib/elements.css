@@ -6,22 +6,16 @@
 /*SHADOWS*/
 /*SIZES*/
 /*TRANSITIONS*/
-.buttons-container {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: flex-end; }
-
 .show-more-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   background: #E2574C;
   color: #eee;
   padding: 9px 16px;
   line-height: 1.4;
   font-weight: 500;
-  cursor: pointer;
-  margin-left: 20px; }
+  cursor: pointer; }
   .show-more-button:hover {
     background-color: rgba(226, 87, 76, 0.75);
     transition: all 0.15s ease; }
