@@ -1486,4 +1486,33 @@ footer {
   height: 80px;
   background-color: #212121; }
 
+.core-header-navigation {
+  width: calc(100% - 80px);
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  align-items: center; }
+  .core-header-navigation .rubric {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 90%;
+    padding: 10px;
+    min-width: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "RalewaySemiBold", "Arial", "sans-serif"; }
+    .core-header-navigation .rubric:hover {
+      color: #E2574C; }
+  .core-header-navigation .choosed-rubric {
+    border-bottom: 5px solid #E2574C;
+    color: #E2574C; }
+
 /*# sourceMappingURL=core.css.map */
